@@ -487,30 +487,5 @@ docker compose up -d
 docker system prune -a
 ```
 
----
-
-# DevOps Engineer Learning Path
-
-```text
-Linux
- ↓
-Networking
- ↓
-Git
- ↓
-Docker
- ↓
-Docker Compose
- ↓
-Kubernetes
- ↓
-CI/CD
- ↓
-Cloud
- ↓
-Terraform
- ↓
-Monitoring
-```
 
 ⭐ If this repository helps you, give it a star.
