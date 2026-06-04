@@ -163,14 +163,6 @@ Three types of tests that should run automatically:
 
 ---
 
-## 📚 Free Resources to Go Deeper
-
-- 🎥 [GitHub Actions Full Course — TechWorld with Nana](https://www.youtube.com/watch?v=R8_veQiYBjI)
-- 🎥 [Jenkins Full Course — Edureka](https://www.youtube.com/watch?v=7KCS70sCoK0)
-- 📖 [GitHub Actions Docs](https://docs.github.com/en/actions)
-- 🔗 [Full DevOps Roadmap 2026](https://github.com/devops-raj/devops-roadmap)
-
----
 
 *⭐ Star this repo if it helped you!*
 
