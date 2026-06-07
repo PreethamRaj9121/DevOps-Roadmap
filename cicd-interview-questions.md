@@ -168,3 +168,7 @@ Three types of tests that should run automatically:
 
 > 📸 **More interview questions daily → [@devops._raj](https://www.instagram.com/devops._raj)**  
 > 💬 Comment **"CICD"** on the reel to get this link in your DM 🚀
+>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=PreethamRaj9121&label=Repo%20Views&color=0e75b6&style=flat" />
+</p>
