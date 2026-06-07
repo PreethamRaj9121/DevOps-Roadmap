@@ -2,10 +2,6 @@
 
 > A step-by-step guide from zero to job-ready. Curated by [devops._raj](https://www.instagram.com/devops._raj)
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=PreethamRaj9121&label=Repo%20Views&color=0e75b6&style=flat" />
-</p>
-
 ⭐ If this repository helps you, please Star it.
 ---
 
@@ -421,6 +417,10 @@ Month 10–12 →  GitOps, Platform Engineering, AIOps
 
 > 📸 Instagram: [@devops._raj](https://www.instagram.com/devops._raj) — Daily tips, interview Q&A, cheat sheets  
 > 💬 Comment **"ROADMAP"** on any post to get free resources in your DM
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=PreethamRaj9121&label=Repo%20Views&color=0e75b6&style=flat" />
+</p>
 
 ---
 
