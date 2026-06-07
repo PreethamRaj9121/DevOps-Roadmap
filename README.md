@@ -2,6 +2,11 @@
 
 > A step-by-step guide from zero to job-ready. Curated by [devops._raj](https://www.instagram.com/devops._raj)
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=PreethamRaj9121&label=Repo%20Views&color=0e75b6&style=flat" />
+</p>
+
+⭐ If this repository helps you, please Star it.
 ---
 
 ## 📌 Table of Contents
