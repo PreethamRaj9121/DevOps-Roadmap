@@ -301,3 +301,7 @@ Secret → Sensitive data
 ⭐ Star this repository if it helped you.
 
 📸 Follow @devops._raj for DevOps Interview Questions, Projects, Roadmaps & Career Tips.
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=PreethamRaj9121&label=Repo%20Views&color=0e75b6&style=flat" />
+</p>
