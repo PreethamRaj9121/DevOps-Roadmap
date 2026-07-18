@@ -1,12 +1,10 @@
-# 🚨 DevOps Production Scenarios
+# 🚨 Production Troubleshooting Guide
 
-Real-world production issues and how to troubleshoot them like a DevOps Engineer.
+## Scenario #1
 
----
+### Problem
 
-# Scenario 1
-
-## Production is DOWN
+Production is DOWN.
 
 CPU: 20%
 
@@ -14,89 +12,148 @@ Memory: Normal
 
 Users can't log in.
 
-### Troubleshooting Steps
+---
 
-### 1. Check Application Logs
+## Step 1 — Confirm the Issue
 
-```bash
-kubectl logs <pod-name>
-```
+Questions:
 
-or
-
-```bash
-docker logs <container-name>
-```
+- Is every user affected?
+- Is it only login?
+- Is the website loading?
+- Any recent deployment?
 
 ---
 
-### 2. Verify Recent Deployments
+## Step 2 — Check Kubernetes
+
+```bash
+kubectl get pods
+kubectl get svc
+kubectl get ingress
+kubectl get events --sort-by=.metadata.creationTimestamp
+```
+
+Look for:
+
+- CrashLoopBackOff
+- ImagePullBackOff
+- Pending Pods
+- Failed Events
+
+---
+
+## Step 3 — Application Logs
+
+```bash
+kubectl logs <pod-name>
+
+kubectl logs <pod-name> --previous
+```
+
+Things to look for:
+
+- Database timeout
+- NullPointerException
+- Authentication failures
+- Secret missing
+- Environment variable missing
+
+---
+
+## Step 4 — Recent Deployment
+
+Questions:
+
+- Was a deployment done today?
+- Configuration changed?
+- Secret rotated?
+- Image updated?
+
+Check:
 
 - Jenkins
 - GitHub Actions
-- GitLab CI
+- GitLab
 - ArgoCD
 
 ---
 
-### 3. Check Database Connectivity
+## Step 5 — Database
 
-Ensure the application can reach the database and credentials are valid.
+Verify:
+
+- Database is running
+- Connection string
+- Credentials
+- Network connectivity
 
 ---
 
-### 4. Verify Authentication
+## Step 6 — Authentication
 
-Check:
+Verify:
 
 - OAuth
-- LDAP
 - JWT
-- Identity Provider
+- LDAP
+- Active Directory
 - Session Store
 
 ---
 
-### 5. Check Load Balancer / Ingress
+## Step 7 — Networking
 
-Verify:
+```bash
+kubectl get ingress
 
-- Service
-- Ingress
+kubectl get svc
+
+nslookup example.com
+```
+
+Check:
+
 - DNS
+- Load Balancer
 - SSL Certificate
+- Network Policy
 
 ---
 
 ## Common Root Causes
 
 - Bad deployment
-- Database outage
+- Database down
+- Expired Secret
+- Wrong ConfigMap
+- Ingress issue
+- DNS issue
 - Authentication failure
-- Expired secrets
-- DNS issues
-- Ingress misconfiguration
-- Network policies
-- Third-party service outage
+- Network Policy
+- Expired SSL
 
 ---
 
-## Commands
+## Interview Tip
 
-```bash
-kubectl get pods
-kubectl logs <pod-name>
-kubectl describe pod <pod-name>
-kubectl get svc
-kubectl get ingress
-kubectl get events
-kubectl top pods
-kubectl top nodes
-```
+Never answer:
 
----
+"I'll restart the server."
 
-⭐ Follow **@devops._raj** for more DevOps interview questions and production scenarios.
+Instead explain:
+
+1. Gather information
+2. Check logs
+3. Isolate the issue
+4. Identify the root cause
+5. Fix it
+6. Verify the service
+7. Monitor after recovery
+
+This structured approach is what interviewers are looking for.
+
+⭐ Star this repository if you found it useful.
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=PreethamRaj9121&label=Repo%20Views&color=0e75b6&style=flat" />
